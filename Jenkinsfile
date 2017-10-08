@@ -3,4 +3,6 @@ import com.lloydsbanking.devops.*;
 
 print "Hello World from Jenkinsfile"
 
-execMaven()
+invokeMavenProjectBuildPipelineHawk (
+    
+)

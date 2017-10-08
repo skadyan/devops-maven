@@ -1,0 +1,21 @@
+<settings>
+    <servers>
+        <server>
+            <id>salsa-repo</id>
+            <username>${nexus.user}</username>
+            <password>${nexus.password}</password>
+        </server>
+        <server>
+            <id>salsa-repo-snapshot</id>
+            <username>${nexus.user}</username>
+            <password>${nexus.password}</password>
+        </server>
+    </servers>
+    <mirrors>
+        <mirror>
+            <id>nexus</id>
+            <mirrorOf>*</mirrorOf>
+            <url>https://nexus.sandbox.extranet.group/nexus/content/groups/maven</url>
+        </mirror>
+    </mirrors>
+</settings>

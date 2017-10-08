@@ -17,6 +17,19 @@
         <junit.version>5.0.0</junit.version>
         <mockito.version>2.10.0</mockito.version>
     </properties>
+
+    <distributionManagement>
+        <downloadUrl>http://nexus.sandbox.extranet.group/nexus/content/groups/maven/</downloadUrl>
+        <repository>
+            <id>salsa-repo</id>
+            <url>http://nexus.sandbox.extranet.group/nexus/content/repositories/maven-repo</url>
+        </repository>
+        <snapshotRepository>
+            <id>salsa-repo-snapshot</id>
+            <url>http://nexus.sandbox.extranet.group/nexus/content/repositories/maven-repo-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <modules>
         <module>loans-common</module>
     </modules>
